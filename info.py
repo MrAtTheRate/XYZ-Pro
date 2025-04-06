@@ -22,7 +22,7 @@ auth_users = [int(user) if id_pattern.search(user) else user for user in environ
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 
 # This Channel Is For When User Start Your Bot Then Bot Send That User Name And Id In This Log Channel, Same For Group Also.
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002142649224'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002496608255'))
 
 # This Is File Channel Where You Upload Your File Then Bot Automatically Save It In Database 
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002350475152 -1002013490678').split()]  # For Multiple Id Use One Space Between Each.
@@ -56,8 +56,8 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "")   # IF Multiple Database Is False Then Fill Only This Database Url.
-DATABASE_NAME = environ.get('DATABASE_NAME', "Raxie2")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Raxiecat2')
+DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 MULTIPLE_DATABASE = bool(environ.get('MULTIPLE_DATABASE', False)) # Set True or False
 
@@ -84,9 +84,9 @@ PUBLIC_FILE_CHANNEL = environ.get('PUBLIC_FILE_CHANNEL', '') # Public Channel Us
 
 
 # Links
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+_fX0T3Ivz9ZiZTI1')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+QeTfo1zk9WFjMjFl')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 't.me/+QeTfo1zk9WFjMjFl') # Support Chat Link Without https:// or @
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+0AtOL0-Ej1g2OTBl')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+0AtOL0-Ej1g2OTBl')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 't.me/+0AtOL0-Ej1g2OTBl') # Support Chat Link Without https:// or @
 OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/Mr_attherate')
 
 # True Or False
@@ -109,8 +109,8 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
 # Token Verification Info :
 VERIFY = bool(environ.get('VERIFY', False))
-VERIFY_SHORTLINK_URL = environ.get('VERIFY_SHORTLINK_URL', 'shortxlinks.com')
-VERIFY_SHORTLINK_API = environ.get('VERIFY_SHORTLINK_API', '4f6e8de9640e8c0e08d0d3ba2f22173caa9f74d4')
+VERIFY_SHORTLINK_URL = environ.get('VERIFY_SHORTLINK_URL', 'softurl.in')
+VERIFY_SHORTLINK_API = environ.get('VERIFY_SHORTLINK_API', '7d8e084e65ca21ad472d3acbeff53f8006ee0210')
 VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', 'https://t.me/How_to_Open0')
 
 # If You Fill Second Shortner Then Bot Attach Both First And Second Shortner And Use It For Verify.
@@ -122,8 +122,8 @@ VERIFY_SND_SHORTLINK_API = environ.get('VERIFY_SND_SHORTLINK_API', '')
 
 # Shortlink Info
 SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', True)) # Set True Or False
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'arlinks.in')
-SHORTLINK_API = environ.get('SHORTLINK_API', '2b9ca12568f523343b5fe52565166d4cd98a4702')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'softurl.in')
+SHORTLINK_API = environ.get('SHORTLINK_API', '7d8e084e65ca21ad472d3acbeff53f8006ee0210')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/How_to_Open0') # How Open Shortner Link Video Link , Channel Link Where You Upload Your Video.
 
 
